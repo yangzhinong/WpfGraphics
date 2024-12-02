@@ -2,7 +2,7 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:WpfApp7"
-             StartupUri="GolfGame.xaml">
+             StartupUri="BinaryTree.xaml">
     <Application.Resources>
          
     </Application.Resources>

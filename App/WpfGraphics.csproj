@@ -55,10 +55,17 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="BinaryTree.xaml.cs">
+      <DependentUpon>BinaryTree.xaml</DependentUpon>
+    </Compile>
     <Compile Include="GolfGame.xaml.cs">
       <DependentUpon>GolfGame.xaml</DependentUpon>
     </Compile>
     <Compile Include="Utility.cs" />
+    <Page Include="BinaryTree.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="BounceBall.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

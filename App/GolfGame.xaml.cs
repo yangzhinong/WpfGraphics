@@ -1,15 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
 namespace WpfApp7
@@ -69,7 +61,7 @@ namespace WpfApp7
             yMax = X0 + 0.7 * DistanceToHole;
             Canvas.SetLeft(golfBall, XNormalize(X0));
             Canvas.SetTop(golfBall, YNormalize(Y0));
-            Canvas.SetLeft(golfHole, XNormalize( X0 + DistanceToHole) - 10);
+            Canvas.SetLeft(golfHole, XNormalize(X0 + DistanceToHole) - 10);
 
             Canvas.SetTop(golfHole, YNormalize(Y0) - 2);
             Canvas.SetLeft(golfFlag, XNormalize(X0 + DistanceToHole) - 2);
@@ -78,7 +70,7 @@ namespace WpfApp7
 
         private double YNormalize(double y)
         {
-           return Utility.YNormalize(canvas1, y, yMin, yMax);
+            return Utility.YNormalize(canvas1, y, yMin, yMax);
         }
 
         private double XNormalize(double x)
@@ -133,7 +125,7 @@ namespace WpfApp7
         private void StartAnimation(object sender, EventArgs e)
         {
             ODESolver.Function[] f = new ODESolver.Function[4] { f1, f2, f3, f4 };
-            double[] result =ODESolver.RungeKutta4(f, xx, time, dt);
+            double[] result = ODESolver.RungeKutta4(f, xx, time, dt);
 
             xx = result;
             double x = result[0];
@@ -146,13 +138,13 @@ namespace WpfApp7
             {
                 Canvas.SetLeft(golfBall, XNormalize(x));
                 Canvas.SetTop(golfBall, YNormalize(y));
-                pl.Points.Add(new Point(XNormalize(x) + 5,YNormalize(y) + 5));
+                pl.Points.Add(new Point(XNormalize(x) + 5, YNormalize(y) + 5));
             }
             if (x > X0 && y <= Y0)
             {
                 double xm = Math.Round(x - X0);
                 ym = Math.Round(ym - Y0);
-                tbXMax.Text = "X distance of this par: " +  xm.ToString() + " m";
+                tbXMax.Text = "X distance of this par: " + xm.ToString() + " m";
                 tbYMax.Text = "Highest Y of this par: " + ym.ToString() + " m";
                 if (xm > DistanceToHole - 10 && xm < DistanceToHole + 10)
                     tbResult.Text = "Congratulations! You win.";
