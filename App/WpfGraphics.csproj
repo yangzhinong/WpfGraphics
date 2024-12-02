@@ -61,6 +61,9 @@
     <Compile Include="GolfGame.xaml.cs">
       <DependentUpon>GolfGame.xaml</DependentUpon>
     </Compile>
+    <Compile Include="SnowFlake.xaml.cs">
+      <DependentUpon>SnowFlake.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Utility.cs" />
     <Page Include="BinaryTree.xaml">
       <SubType>Designer</SubType>
@@ -101,6 +104,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pendulum.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SnowFlake.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
