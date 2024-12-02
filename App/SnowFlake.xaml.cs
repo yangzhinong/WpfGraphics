@@ -23,7 +23,7 @@ namespace WpfApp7
             InitializeComponent();
 
             // determine the size of the snowflake:
-            double ysize = 0.8 * canvas1.Height / (Math.Sqrt(3) * 4 / 3);
+            double ysize = 0.8 * canvas1.Height / 2;
             double xsize = 0.8 * canvas1.Width / 2;
             double size = 0;
             if (ysize < xsize)
@@ -87,6 +87,10 @@ namespace WpfApp7
             double xmid = canvas.Width / 2;
             double ymid = canvas.Height / 2;
             Point[] pta = new Point[4];
+            //pta[0] = new Point(xmid, ymid + length / 2 / Math.Cos(Math.PI/6));
+            //pta[1] = new Point(xmid + length / 2, ymid - length / 2 * Math.Tan(Math.PI/6));
+            //pta[2] = new Point(xmid - length / 2, ymid - length / 2 * Math.Tan(Math.PI/6));
+
             pta[0] = new Point(xmid, ymid + length / 2 * Math.Sqrt(3) * 2 / 3);
             pta[1] = new Point(xmid + length / 2, ymid - length / 2 * Math.Sqrt(3) / 3);
             pta[2] = new Point(xmid - length / 2, ymid - length / 2 * Math.Sqrt(3) / 3);
