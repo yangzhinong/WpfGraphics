@@ -110,8 +110,7 @@ namespace WpfApp7
             double cx, cy, dcx, dcy, x, y, x2, y2;
             dcx = (Xmax - Xmin) / (width - 1);
             dcy = (Ymax - Ymin) / (height - 1);
-            byte[] pixelData =
-            new byte[width * height];
+            byte[] pixelData =new byte[width * height];
             cy = Ymin;
             for (int i = 0; i < height; i++)
             {
@@ -144,8 +143,7 @@ namespace WpfApp7
                     }
                     else
                         cindex = 50;
-                    pixelData[j + iIndex] =
-                    (byte)cindex;
+                    pixelData[j + iIndex] =(byte)cindex;
                     cx += dcx;
                     if (zmax < Math.Sqrt(x2 + y2))
                         zmax = Math.Sqrt(x2 + y2);

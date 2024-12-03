@@ -55,32 +55,56 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="BinaryTree.xaml.cs">
+    <Compile Include="Chapter07\BinaryTree.xaml.cs">
       <DependentUpon>BinaryTree.xaml</DependentUpon>
     </Compile>
-    <Compile Include="GolfGame.xaml.cs">
+    <Compile Include="Chapter07\GolfGame.xaml.cs">
       <DependentUpon>GolfGame.xaml</DependentUpon>
     </Compile>
-    <Compile Include="MandelbrotSet.xaml.cs">
+    <Compile Include="Chapter07\MandelbrotSet.xaml.cs">
       <DependentUpon>MandelbrotSet.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Chapter08\ChartStyle.cs" />
+    <Compile Include="Chapter08\ChartStyleGridlines.cs" />
+    <Compile Include="Chapter08\DataCollection.cs" />
+    <Compile Include="Chapter08\LineChartExample.xaml.cs">
+      <DependentUpon>LineChartExample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Chapter08\LineChartWithGridlines.xaml.cs">
+      <DependentUpon>LineChartWithGridlines.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Chapter08\SimpleLineChart.xaml.cs">
+      <DependentUpon>SimpleLineChart.xaml</DependentUpon>
     </Compile>
     <Compile Include="SnowFlake.xaml.cs">
       <DependentUpon>SnowFlake.xaml</DependentUpon>
     </Compile>
     <Compile Include="Utility.cs" />
-    <Page Include="BinaryTree.xaml">
+    <Page Include="Chapter07\BinaryTree.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="BounceBall.xaml">
+    <Page Include="Chapter07\BounceBall.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="CoupledSprings.xaml">
+    <Page Include="Chapter07\CoupledSprings.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="GolfGame.xaml">
+    <Page Include="Chapter07\GolfGame.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Chapter08\LineChartExample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Chapter08\LineChartWithGridlines.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Chapter08\SimpleLineChart.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -92,17 +116,17 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="BounceBall.xaml.cs">
+    <Compile Include="Chapter07\BounceBall.xaml.cs">
       <DependentUpon>BounceBall.xaml</DependentUpon>
     </Compile>
-    <Compile Include="CoupledSprings.xaml.cs">
+    <Compile Include="Chapter07\CoupledSprings.xaml.cs">
       <DependentUpon>CoupledSprings.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="MandelbrotSet.xaml">
+    <Page Include="Chapter07\MandelbrotSet.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
