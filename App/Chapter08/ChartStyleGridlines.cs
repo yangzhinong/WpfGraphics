@@ -235,9 +235,5 @@ namespace WpfApp7.Chapter08
                     break;
             }
         }
-
-        public ChartStyleGridlines(Canvas chartCanvas) : base(chartCanvas)
-        {
-        }
     }
 }

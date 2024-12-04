@@ -67,11 +67,15 @@
     <Compile Include="Chapter08\ChartStyle.cs" />
     <Compile Include="Chapter08\ChartStyleGridlines.cs" />
     <Compile Include="Chapter08\DataCollection.cs" />
+    <Compile Include="Chapter08\Legend.cs" />
     <Compile Include="Chapter08\LineChartExample.xaml.cs">
       <DependentUpon>LineChartExample.xaml</DependentUpon>
     </Compile>
     <Compile Include="Chapter08\LineChartWithGridlines.xaml.cs">
       <DependentUpon>LineChartWithGridlines.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Chapter08\LineChartWithLegend.xaml.cs">
+      <DependentUpon>LineChartWithLegend.xaml</DependentUpon>
     </Compile>
     <Compile Include="Chapter08\SimpleLineChart.xaml.cs">
       <DependentUpon>SimpleLineChart.xaml</DependentUpon>
@@ -101,6 +105,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Chapter08\LineChartWithGridlines.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Chapter08\LineChartWithLegend.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
