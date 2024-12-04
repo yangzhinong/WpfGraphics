@@ -66,8 +66,17 @@
     </Compile>
     <Compile Include="Chapter08\ChartStyle.cs" />
     <Compile Include="Chapter08\ChartStyleGridlines.cs" />
+    <Compile Include="Chapter08\ChartStyleLineChartControl.cs" />
     <Compile Include="Chapter08\DataCollection.cs" />
+    <Compile Include="Chapter08\DataCollectionLineChartControl.cs" />
+    <Compile Include="Chapter08\DataSeriesLineChartControl.cs" />
     <Compile Include="Chapter08\Legend.cs" />
+    <Compile Include="Chapter08\LineChartControl.xaml.cs">
+      <DependentUpon>LineChartControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Chapter08\LineChartControlExample.xaml.cs">
+      <DependentUpon>LineChartControlExample.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Chapter08\LineChartExample.xaml.cs">
       <DependentUpon>LineChartExample.xaml</DependentUpon>
     </Compile>
@@ -97,6 +106,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Chapter07\GolfGame.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Chapter08\LineChartControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Chapter08\LineChartControlExample.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
