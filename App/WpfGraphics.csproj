@@ -89,6 +89,18 @@
     <Compile Include="Chapter08\SimpleLineChart.xaml.cs">
       <DependentUpon>SimpleLineChart.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Chapter09\Matrix3DOperation.xaml.cs">
+      <DependentUpon>Matrix3DOperation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Chapter09\OrthographicProjection.xaml.cs">
+      <DependentUpon>OrthographicProjection.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Chapter09\PerspectiveProjection.xaml.cs">
+      <DependentUpon>PerspectiveProjection.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Chapter09\RotateTransformation.xaml.cs">
+      <DependentUpon>RotateTransformation.xaml</DependentUpon>
+    </Compile>
     <Compile Include="SnowFlake.xaml.cs">
       <DependentUpon>SnowFlake.xaml</DependentUpon>
     </Compile>
@@ -130,6 +142,22 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Chapter08\SimpleLineChart.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Chapter09\Matrix3DOperation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Chapter09\OrthographicProjection.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Chapter09\PerspectiveProjection.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Chapter09\RotateTransformation.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
