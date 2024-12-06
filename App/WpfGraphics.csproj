@@ -110,6 +110,9 @@
     <Compile Include="Chapter10\SimpleTriangle.xaml.cs">
       <DependentUpon>SimpleTriangle.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Chapter10\Sphere.xaml.cs">
+      <DependentUpon>Sphere.xaml</DependentUpon>
+    </Compile>
     <Compile Include="SnowFlake.xaml.cs">
       <DependentUpon>SnowFlake.xaml</DependentUpon>
     </Compile>
@@ -175,6 +178,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Chapter10\SimpleTriangle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Chapter10\Sphere.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
