@@ -35,6 +35,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="3DTools, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\3DTools.1.0.0\lib\net35\3DTools.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
@@ -101,6 +104,12 @@
     <Compile Include="Chapter09\RotateTransformation.xaml.cs">
       <DependentUpon>RotateTransformation.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Chapter10\Cube.xaml.cs">
+      <DependentUpon>Cube.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Chapter10\SimpleTriangle.xaml.cs">
+      <DependentUpon>SimpleTriangle.xaml</DependentUpon>
+    </Compile>
     <Compile Include="SnowFlake.xaml.cs">
       <DependentUpon>SnowFlake.xaml</DependentUpon>
     </Compile>
@@ -158,6 +167,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Chapter09\RotateTransformation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Chapter10\Cube.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Chapter10\SimpleTriangle.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -220,6 +237,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

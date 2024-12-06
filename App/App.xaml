@@ -2,7 +2,7 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:WpfApp7"
-             StartupUri="Chapter09/RotateTransformation.xaml">
+             StartupUri="Chapter10/Cube.xaml">
     <Application.Resources>
          
     </Application.Resources>
