@@ -107,6 +107,9 @@
     <Compile Include="Chapter10\Cube.xaml.cs">
       <DependentUpon>Cube.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Chapter10\Cylinder.xaml.cs">
+      <DependentUpon>Cylinder.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Chapter10\SimpleTriangle.xaml.cs">
       <DependentUpon>SimpleTriangle.xaml</DependentUpon>
     </Compile>
@@ -174,6 +177,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Chapter10\Cube.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Chapter10\Cylinder.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
