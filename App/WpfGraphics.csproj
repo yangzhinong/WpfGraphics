@@ -104,6 +104,9 @@
     <Compile Include="Chapter09\RotateTransformation.xaml.cs">
       <DependentUpon>RotateTransformation.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Chapter10\Cone.xaml.cs">
+      <DependentUpon>Cone.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Chapter10\Cube.xaml.cs">
       <DependentUpon>Cube.xaml</DependentUpon>
     </Compile>
@@ -115,6 +118,9 @@
     </Compile>
     <Compile Include="Chapter10\Sphere.xaml.cs">
       <DependentUpon>Sphere.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Chapter10\Torus.xaml.cs">
+      <DependentUpon>Torus.xaml</DependentUpon>
     </Compile>
     <Compile Include="SnowFlake.xaml.cs">
       <DependentUpon>SnowFlake.xaml</DependentUpon>
@@ -176,6 +182,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Chapter10\Cone.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Chapter10\Cube.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -189,6 +199,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Chapter10\Sphere.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Chapter10\Torus.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
