@@ -122,6 +122,18 @@
     <Compile Include="Chapter10\Torus.xaml.cs">
       <DependentUpon>Torus.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Chapter11\ConeGeometry.cs" />
+    <Compile Include="Chapter11\CubeGeometry.cs" />
+    <Compile Include="Chapter11\CubeGeometryTest.xaml.cs">
+      <DependentUpon>CubeGeometryTest.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Chapter11\CylinderGeometry.cs" />
+    <Compile Include="Chapter11\EllipsoidGeometry.cs" />
+    <Compile Include="Chapter11\TorusGeometry.cs" />
+    <Compile Include="Chapter12\Cube.cs" />
+    <Compile Include="Chapter12\CubeShapeTest.xaml.cs">
+      <DependentUpon>CubeShapeTest.xaml</DependentUpon>
+    </Compile>
     <Compile Include="SnowFlake.xaml.cs">
       <DependentUpon>SnowFlake.xaml</DependentUpon>
     </Compile>
@@ -203,6 +215,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Chapter10\Torus.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Chapter11\CubeGeometryTest.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Chapter12\CubeShapeTest.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
