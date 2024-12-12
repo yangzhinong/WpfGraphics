@@ -134,6 +134,23 @@
     <Compile Include="Chapter12\CubeShapeTest.xaml.cs">
       <DependentUpon>CubeShapeTest.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Chapter13\ExtrudeSurface.cs" />
+    <Compile Include="Chapter13\ExtrudeSurfaceTest.xaml.cs">
+      <DependentUpon>ExtrudeSurfaceTest.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Chapter13\ParametricSurface.cs" />
+    <Compile Include="Chapter13\ParametricSurfaceTest.xaml.cs">
+      <DependentUpon>ParametricSurfaceTest.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Chapter13\RorateSurface.cs" />
+    <Compile Include="Chapter13\RotateSurfaceTest.xaml.cs">
+      <DependentUpon>RotateSurfaceTest.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Chapter13\SimpleSurface.cs" />
+    <Compile Include="Chapter13\SimpleSurfaceTest.xaml.cs">
+      <DependentUpon>SimpleSurfaceTest.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Chapter13\Utility.cs" />
     <Compile Include="SnowFlake.xaml.cs">
       <DependentUpon>SnowFlake.xaml</DependentUpon>
     </Compile>
@@ -223,6 +240,22 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Chapter12\CubeShapeTest.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Chapter13\ExtrudeSurfaceTest.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Chapter13\ParametricSurfaceTest.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Chapter13\RotateSurfaceTest.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Chapter13\SimpleSurfaceTest.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
