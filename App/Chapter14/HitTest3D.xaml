@@ -24,7 +24,7 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="auto" />
         </Grid.RowDefinitions>
-        <tool3d:Interactive3DDecorator>
+        <tool3d:TrackballDecorator>
             <Viewport3D x:Name="viewport3d" MouseDown="viewport3d_MouseDown"
             Camera="{Binding Source={StaticResource camera}}">
                 <ContainerUIElement3D>
@@ -54,7 +54,7 @@
                     </ModelUIElement3D>
                 </ContainerUIElement3D>
             </Viewport3D>
-        </tool3d:Interactive3DDecorator>
+        </tool3d:TrackballDecorator>
         
         <TextBlock x:Name="textBlock" Text="Mesh Point = " Grid.Row="1" Margin="10" />
 
