@@ -150,7 +150,32 @@
     <Compile Include="Chapter13\SimpleSurfaceTest.xaml.cs">
       <DependentUpon>SimpleSurfaceTest.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Chapter13\SurfaceShading.cs" />
+    <Compile Include="Chapter13\SurfaceShadingTest.xaml.cs">
+      <DependentUpon>SurfaceShadingTest.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Chapter13\Utility.cs" />
+    <Compile Include="Chapter14\DiffiseMaterialTest.xaml.cs">
+      <DependentUpon>DiffiseMaterialTest.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Chapter14\HitTest3D.xaml.cs">
+      <DependentUpon>HitTest3D.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Chapter14\LightSourceTest.xaml.cs">
+      <DependentUpon>LightSourceTest.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Chapter14\LinearBrushMap.xaml.cs">
+      <DependentUpon>LinearBrushMap.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Chapter14\SpecularEmissiveTest.xaml.cs">
+      <DependentUpon>SpecularEmissiveTest.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Chapter14\TrackballTest.xaml.cs">
+      <DependentUpon>TrackballTest.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Chapter14\Viewport2DVisual3DTest.xaml.cs">
+      <DependentUpon>Viewport2DVisual3DTest.xaml</DependentUpon>
+    </Compile>
     <Compile Include="SnowFlake.xaml.cs">
       <DependentUpon>SnowFlake.xaml</DependentUpon>
     </Compile>
@@ -259,6 +284,38 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Chapter13\SurfaceShadingTest.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Chapter14\DiffiseMaterialTest.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Chapter14\HitTest3D.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Chapter14\LightSourceTest.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Chapter14\LinearBrushMap.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Chapter14\SpecularEmissiveTest.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Chapter14\TrackballTest.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Chapter14\Viewport2DVisual3DTest.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -329,6 +386,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="golf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="flower.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

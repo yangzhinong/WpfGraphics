@@ -1,0 +1,28 @@
+﻿<Window x:Class="WpfApp7.Chapter14.TrackballTest"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Shapes"
+        xmlns:tool3d="clr-namespace:_3DTools;assembly=3DTools"
+        mc:Ignorable="d"
+        Title="TrackballTest" Height="450" Width="800">
+    <Grid>
+        <tool3d:TrackballDecorator>
+            <Viewport3D>
+                <Viewport3D.Camera>
+                    <PerspectiveCamera x:Name="camera"
+                                       LookDirection="-1,-1,-1"
+                                       UpDirection="0,1,0"
+                                       Position="2.5,2.5,2.5" />
+                </Viewport3D.Camera>
+                <tool3d:ScreenSpaceLines3D Points="0 0 0,1.5 0 0 "
+                                           Color="Red" Thickness="2" />
+                <tool3d:ScreenSpaceLines3D Points="0 0 0,0 1.5 0 "
+                           Color="Green" Thickness="2" />
+                <tool3d:ScreenSpaceLines3D Points="0 0 0,0 0 1.5 "
+           Color="Blue" Thickness="2" />
+            </Viewport3D>
+        </tool3d:TrackballDecorator>
+    </Grid>
+</Window>

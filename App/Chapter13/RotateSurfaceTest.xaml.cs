@@ -74,8 +74,8 @@ namespace WpfApp7.Chapter13
             {
                 double theta = i * Math.PI / 10;
                 Point3D pt = new Point3D(
-                0.3 * Math.Cos(theta),
-                0.3 * Math.Sin(theta), 0);
+                        0.3 * Math.Cos(theta),
+                        0.3 * Math.Sin(theta), 0);
                 pt += new Vector3D(1, 0, 0);
                 rs.CurvePoints.Add(pt);
             }
