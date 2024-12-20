@@ -32,4 +32,14 @@ public class LineStyle
         get { return lineColor; }
         set { lineColor = value; }
     }
+
+    public PlotLinesMethodEnum PlotMethod { get; set; }
+
+
+    public enum PlotLinesMethodEnum
+    {
+        Lines = 0,
+        Splines = 1
+
+    }
 }

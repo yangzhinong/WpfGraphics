@@ -10,6 +10,7 @@ public class DataSeries
     {
         lineStyle = new LineStyle();
         pointList = new ArrayList();
+        SymbolStyle= new SymbolStyle();
     }
     public LineStyle LineStyle
     {
@@ -26,6 +27,9 @@ public class DataSeries
         get { return pointList; }
         set { pointList = value; }
     }
+
+    public SymbolStyle SymbolStyle { get; set; }
+
     public void AddPoint(PointF pt)
     {
         pointList.Add(pt);

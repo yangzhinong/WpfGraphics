@@ -67,13 +67,53 @@ public class DataCollection
                 Pen aPen = new Pen(ds.LineStyle.LineColor,
                 ds.LineStyle.Thickness);
                 aPen.DashStyle = ds.LineStyle.Pattern;
-                for (int i = 1; i < ds.PointList.Count; i++)
+                if (ds.LineStyle.PlotMethod == LineStyle.PlotLinesMethodEnum.Lines)
                 {
-                    g.DrawLine(aPen,
-                    cs.Point2D((PointF)ds.PointList[i - 1]),
-                    cs.Point2D((PointF)ds.PointList[i]));
+                    for (int i = 1; i < ds.PointList.Count; i++)
+                    {
+                        g.DrawLine(aPen,
+                        cs.Point2D((PointF)ds.PointList[i - 1]),
+                        cs.Point2D((PointF)ds.PointList[i]));
+                    }
+                } else if (ds.LineStyle.PlotMethod == LineStyle.PlotLinesMethodEnum.Splines)
+                {
+                    ArrayList al = new ArrayList();
+                    for (int i = 0; i < ds.PointList.Count; i++)
+                    {
+                        PointF pt = (PointF)ds.PointList[i];
+                        if (pt.X >= cs.XLimMin &&
+                        pt.X <= cs.XLimMax &&
+                        pt.Y >= cs.YLimMin &&
+                        pt.Y <= cs.YLimMax)
+                        {
+                            al.Add(pt);
+                        }
+                    }
+                    PointF[] pts = new PointF[al.Count];
+                    for (int i = 0; i < pts.Length; i++)
+                    {
+                        pts[i] = cs.Point2D((PointF)(al[i]));
+                    }
+                    g.DrawCurve(aPen, pts);
                 }
+                
                 aPen.Dispose();
+
+
+            }
+        }
+
+        // Plot Symbols:
+        foreach (DataSeries ds in DataSeriesList)
+        {
+            for (int i = 0; i < ds.PointList.Count; i++)
+            {
+                PointF pt = (PointF)ds.PointList[i];
+                if (pt.X >= cs.XLimMin && pt.X <= cs.XLimMax &&
+                pt.Y >= cs.YLimMin && pt.Y <= cs.YLimMax)
+                {
+                    ds.SymbolStyle.DrawSymbol(g, cs.Point2D((PointF)ds.PointList[i]));
+                }
             }
         }
     }
